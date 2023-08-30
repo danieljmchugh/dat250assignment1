@@ -1,3 +1,4 @@
+package no.hvl.dat250.exp1;
 import io.javalin.Javalin;
 
 public class App {
@@ -76,6 +77,8 @@ public class App {
                 })
                 .start(9000);
     }
-
+    public String getGreeting() {
+        return "Greetings from me";
+    }
 
 }

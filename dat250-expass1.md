@@ -29,3 +29,6 @@ A DockerHub account was also created, username `danieljmc`
 		./gradlew build
 		./gradlew run 
 Which resulted in a succesful build and the output of `Hello World!` by the generated App.java class.
+
+# Fixing compilation errors
+Without the correct package declaration in `App.java`, the compiler will throw an error of not finding the App class. Secondly adding `implementation("io.javalin:javalin:5.6.1")` into dependencies in `build.gradle.kts` includes the REST library the program uses. Next is `AppTest.java`, which has one assersion test called `appHasAGreeting`, which tests if class App has the method `getGreeting()`. A method was therefore added to `App` which returns a greeting string. Afterwhich, the program compiles.
