@@ -34,4 +34,10 @@ Which resulted in a succesful build and the output of `Hello World!` by the gene
 Without the correct package declaration in `App.java`, the compiler will throw an error of not finding the App class. Secondly adding `implementation("io.javalin:javalin:5.6.1")` into dependencies in `build.gradle.kts` includes the REST library the program uses. Next is `AppTest.java`, which has one assersion test called `appHasAGreeting`, which tests if class App has the method `getGreeting()`. A method was therefore added to `App` which returns a greeting string. Afterwhich, the program compiles.
 
 # Quality Assurance
-- Broke up method into smaller more specialized methods and removed/renamed some variables to streamline and clarify the logic. 
+- Broke up method into smaller more specialized methods and removed/renamed some variables to streamline and clarify the logic, details can be seen on github.
+
+# Package Application
+A Dockerfile was created using the contents supplied by the assignment. Starting the podman Vm again, an image was build and the build system was successful after 4m12s...
+Running `podman images` showed two image repositories: unit-converter and eclipse-temurin.
+A repository was then created on Dockerhub and the image pushed onto it, the link being:
+https://hub.docker.com/repository/docker/danieljmc/dat250/general
