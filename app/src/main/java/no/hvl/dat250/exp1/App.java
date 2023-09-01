@@ -1,6 +1,10 @@
 package no.hvl.dat250.exp1;
 import io.javalin.Javalin;
 
+
+// TODO: Add Javadoc comments for each of the methods
+
+
 public class App {
 
     private static final String WEBPAGE = "<!DOCTYPE html>\n" +
